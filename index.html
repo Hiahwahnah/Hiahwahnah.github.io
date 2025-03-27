@@ -4,85 +4,19 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>H. Richard Neal III Resume</title>
-        <style>
-            /* General Styles */
-            body {
-                font-family: Arial, sans-serif;
-                line-height: 1.6;
-                margin: 0;
-                padding: 0;
-                color: #000; /* Black text */
-                background-color: #000; /* Black background */
-            }
-            .container {
-                max-width: 800px;
-                margin: 20px auto;
-                padding: 20px;
-                background: #fff; /* White background for the container */
-                border-radius: 10px;
-                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* 3D effect */
-            }
-            h1,
-            h2 {
-                color: #e60000; /* Red color for titles */
-            }
-            .header {
-                text-align: center;
-            }
-            .header h1 {
-                margin: 10px 0;
-            }
-            .contact {
-                margin: 10px 0;
-                font-size: 14px;
-            }
-            .contact a {
-                color: #e60000; /* Red links */
-                text-decoration: none;
-            }
-            /* Section Styling */
-            .section {
-                margin: 20px 0;
-                background: #fff; /* White background for each section */
-                padding: 15px;
-                border-radius: 8px;
-                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* 3D effect */
-            }
-            .section h2 {
-                margin-bottom: 10px;
-                border-bottom: 2px solid #e60000; /* Red border under headings */
-                padding-bottom: 5px;
-            }
-            .item {
-                margin-bottom: 15px;
-            }
-            .item h3 {
-                margin: 0;
-                font-size: 18px;
-                color: #555;
-            }
-            .item p {
-                margin: 5px 0;
-                font-size: 14px;
-            }
-            .skills ul {
-                list-style: none;
-                padding: 0;
-            }
-            .skills ul li {
-                display: inline-block;
-                background: #e60000; /* Red background for skills */
-                color: #fff;
-                padding: 5px 10px;
-                margin: 5px 5px 5px 0;
-                border-radius: 4px;
-            }
-        </style>
+        <link rel="stylesheet" href="styles.css" />
     </head>
 
     <body>
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="projects.html">Projects</a></li>
+            </ul>
+        </nav>
+
         <main class="container">
-            <section class="header">
+            <section class="header center">
                 <h1>H. Richard Neal III</h1>
                 <p class="contact">
                     Email: <a href="mailto:Hiahwahnah@gmail.com">Hiahwahnah@gmail.com</a> |
@@ -200,20 +134,6 @@
                         <li>Microsoft Teams (Team Collaboration)</li>
                         <li>Pandas, NumPy (Data Analysis)</li>
                     </ul>
-                </div>
-            </section>
-
-            <section class="section">
-                <h2>Projects</h2>
-                <div class="item">
-                    <h3>LMPD Crime Analysis</h3>
-                    <p><a href="https://github.com/Hiahwahnah/LMPD_crime_analysis.git" target="_blank">View Repository</a></p>
-                    <p>An analysis of 2021-2022 crime data using Python, Pandas, Matplotlib, and Seaborn. Processes and visualizes crime trends through graphs and charts.</p>
-                </div>
-                <div class="item">
-                    <h3>Book Data Analysis</h3>
-                    <p><a href="https://github.com/Hiahwahnah/book_data_analysis.git" target="_blank">View Repository</a></p>
-                    <p>A data analysis project exploring trends in over 9,000 book titles from Goodreads.com.</p>
                 </div>
             </section>
         </main>

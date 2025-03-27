@@ -1,0 +1,126 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    color: #000; /* Black text */
+    background-color: #000; /* Black background */
+}
+
+/* Navigation Bar */
+.navbar {
+    background-color: #e60000; /* Red background for the navbar */
+    padding: 10px 20px;
+}
+
+.navbar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.navbar ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.navbar ul li a {
+    color: #fff; /* White text */
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.navbar ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Container and Other Styles */
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff; /* White background for the container */
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* 3D effect */
+}
+
+h1, h2, h3 {
+    color: #e60000; /* Red color for titles */
+}
+
+h3 a {
+    color: red; /* Red color for the link */
+    text-decoration: underline; /* Underline to make it look like a URL */
+    font-family: "Courier New", monospace; /* Monospace font for a more "URL-like" appearance */
+}
+
+h3 a:hover {
+    color: #000; /* Change link color to black on hover */
+    text-decoration: underline; /* Underline links on hover */
+    font-family: "Courier New", monospace; /* Monospace font for a more "URL-like" appearance */
+}
+
+h3 a:active {
+    color: #0000FF; /* Change link color to blue when clicked (active) */
+    font-family: "Courier New", monospace; /* Monospace font for a more "URL-like" appearance */
+}
+
+/* Centering Content */
+.center {
+    text-align: center;
+}
+
+/* Section Styling */
+.section {
+    margin: 20px 0;
+    background: #fff; /* White background for each section */
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* 3D effect */
+}
+.section h2 {
+    margin-bottom: 10px;
+    border-bottom: 2px solid #e60000; /* Red border under headings */
+    padding-bottom: 5px;
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.contact {
+    margin: 10px 0;
+    font-size: 14px;
+}
+
+.contact a {
+    color: #e60000; /* Red links */
+    text-decoration: none;
+}
+
+/* Styling for Projects Page */
+.project {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.project a {
+    color: #e60000;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.project a:hover {
+    text-decoration: underline;
+}
+
+/* Back to Resume link */
+.back-to-resume {
+    display: block;
+    margin-top: 20px;
+    text-align: center;
+}
