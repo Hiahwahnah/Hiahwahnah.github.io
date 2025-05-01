@@ -1,0 +1,72 @@
+/* Mobile-Specific Styles (Applied ONLY on mobile) */
+
+/* Adjustments for mobile screens */
+@media (max-width: 767px) {
+    /* Adjust header text size for mobile */
+    .header h1 {
+        font-size: 24px; /* Smaller heading for mobile */
+    }
+
+    .header p {
+        font-size: 14px; /* Smaller paragraph text */
+    }
+
+    /* Hide contact info on mobile */
+    .contact {
+        display: none; /* Hide the contact info */
+    }
+
+    /* Navbar adjustments for mobile */
+    .navbar {
+        position: relative;
+    }
+
+    /* Hide the navbar list by default on mobile */
+    .navbar-list {
+        display: none; /* Hide menu by default */
+        flex-direction: column; /* Stack navbar items vertically on mobile */
+        justify-content: center;
+        position: absolute;
+        top: 100%; /* Position the dropdown below the navbar */
+        left: 0;
+        width: 100%;
+        background-color: #e60000; /* Same as navbar background color */
+        padding: 10px 0;
+    }
+
+    .navbar-list li {
+        margin: 10px 0; /* Add margin between navbar items on mobile */
+        text-align: center; /* Center-align links */
+    }
+
+    /* Toggle button styles */
+    .navbar-toggle {
+        display: block;
+        background-color: #e60000; /* Red button */
+        color: white;
+        border: none;
+        font-size: 24px;
+        padding: 10px;
+        cursor: pointer;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+    }
+
+    /* Display navbar list when toggle button is clicked */
+    .navbar.open .navbar-list {
+        display: flex; /* Show the menu when navbar has 'open' class */
+    }
+}
+
+/* Ensure the hamburger button is only visible on smaller screens */
+.navbar-toggle {
+    display: none; /* Hide by default */
+}
+
+/* Show the hamburger button only on screens smaller than 767px */
+@media (max-width: 767px) {
+    .navbar-toggle {
+        display: block; /* Show the button on mobile */
+    }
+}
