@@ -27,26 +27,45 @@
                 </p>
             </section>
 
-            <section class="section">
+            <section class="section projects">
                 <h2>Projects</h2>
-                <div class="item">
-                    <h3><a href="https://github.com/Hiahwahnah/LMPD_crime_analysis.git" target="_blank">LMPD Crime Analysis</a></h3>
-                    <p>An analysis of 2021-2022 crime data using Python, Pandas, Matplotlib, and Seaborn. Processes and visualizes crime trends through graphs and charts.</p>
-                </div>
-                <div class="item">
-                    <h3><a href="https://github.com/Hiahwahnah/book_data_analysis.git" target="_blank">Book Data Analysis</a></h3>
-                    <p>A data analysis project exploring trends in over 9,000 book titles from Goodreads.com.</p>
-                </div>
-                <div class="item">
-                    <h3><a href="https://github.com/Hiahwahnah/YourChoice" target="_blank">Contact Form Project</a></h3>
-                    <p>A web application featuring a contact form that sends user input to an email address using EmailJS. This project helps to demonstrate my skills in HTML, CSS, JavaScript, and integrating third-party services.</p>
-                </div>
-                
             </section>
 
             <footer>
                 <p>&copy; 2025 H. Richard Neal III | Portfolio</p>
             </footer>
         </main>
+
+        <script>
+            const section = document.querySelector('.projects');
+
+            fetch('https://api.github.com/users/Hiahwahnah/repos')
+                .then(response => response.json())
+                .then(repos => {
+                    repos.forEach(repo => {
+                        if (!repo.description) return;
+
+                        const projectDiv = document.createElement('div');
+                        projectDiv.classList.add('item');
+
+                        const projectTitle = document.createElement('h3');
+                        const projectLink = document.createElement('a');
+                        projectLink.href = repo.html_url;
+                        projectLink.target = '_blank';
+                        projectLink.textContent = repo.name;
+                        projectTitle.appendChild(projectLink);
+
+                        const projectDesc = document.createElement('p');
+                        projectDesc.textContent = repo.description;
+
+                        projectDiv.appendChild(projectTitle);
+                        projectDiv.appendChild(projectDesc);
+                        section.appendChild(projectDiv);
+                    });
+                })
+                .catch(error => {
+                    console.error('Error fetching GitHub repos:', error);
+                });
+        </script>
     </body>
 </html>
